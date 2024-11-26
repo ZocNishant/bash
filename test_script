@@ -1,0 +1,41 @@
+#!/bin/bash
+
+echo HelloPasa
+
+# Variables
+
+#VAR=Nishant
+
+#VAR=Pasa
+
+#echo $VAR
+
+# String
+
+STR="Pasa k Xa tero khbr"
+
+echo ${STR}
+echo ${STR/Pasa/Nishant}
+echo ${STR::7}
+
+
+# Array
+
+ARRAY=(One Two Three Four Five Six Seven Eight Nine Zero)
+
+echo ${ARRAY[0]}
+echo ${ARRAY[@]}
+echo ${!ARRAY[@]}
+
+CAL=$((7+10))
+echo $CAL
+
+expr 9 - 1
+
+echo "99 - 88 * 2" | bc
+
+# Arguments in Bash
+
+echo $1
+
+echo $2

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ 1==1 ]
+then
+	echo "pasa"
+else
+	echo "no pasa"
+fi
