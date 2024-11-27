@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Enter your name"
+
+read name
+
+case $name in
+	"root" )
+		echo "pasa k xa. Access raixa ta yo folder ma"
+	;;
+	"aru" )
+		echo "turi khau pasa"
+	;;
+	* )
+		echo "khau babu tme ni"
+	;;
+esac

@@ -33,3 +33,12 @@ then
 else
 	echo "nasame"
 fi
+
+FILE=test_script
+
+if [ -e $FILE  ]
+then
+	echo "Yes there is"
+else
+	echo "Nope"
+fi

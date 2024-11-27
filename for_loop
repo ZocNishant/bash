@@ -1,0 +1,8 @@
+#!/bin/bash
+
+arr=(pasa sasa saaasa saaaaaasa ssssaasa)
+
+for i in ${arr[@]}
+do
+	echo $i
+done
