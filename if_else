@@ -1,8 +1,35 @@
 #!/bin/bash
 
-if [ 1==1 ]
+VAR=1
+
+
+
+if [ $VAR == 1 ]
 then
 	echo "pasa"
 else
 	echo "no pasa"
+fi
+
+# New
+
+if [ $1 == 14 ]
+then
+	echo "Equals"
+else
+	echo "nope"
+fi
+
+
+# String Comparision
+
+
+SRT1="Paasa"
+STR2="Paaasa"
+
+if [ "$STR1" == "$STR2"  ]
+then
+	echo "same"
+else
+	echo "nasame"
 fi
