@@ -7,3 +7,5 @@ arr=(
 "My life has no purpose, no direction, no aim, no meaning, and yet I'm happy. I can't figure it out. What am I doing right?"
 "The past is finished. There is nothing to be gained by going over it. Whatever it gave us in the experiences it brought us was something we had to know."
 )
+
+echo ${arr[$RANDOM%5]}
