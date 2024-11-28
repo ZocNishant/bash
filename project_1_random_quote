@@ -1,0 +1,9 @@
+#!/bin/bash
+
+arr=(
+"The best way to keep children home is to make the home atmosphere pleasant--and let the air out of the tires."
+"If it's true that our species is alone in the universe, then I'd have to say that the universe aimed rather low and settled for very little."
+"Some prices are just too high, no matter how much you may want the prize. The one thing you can't trade for your heart's desire is your heart."
+"My life has no purpose, no direction, no aim, no meaning, and yet I'm happy. I can't figure it out. What am I doing right?"
+"The past is finished. There is nothing to be gained by going over it. Whatever it gave us in the experiences it brought us was something we had to know."
+)
