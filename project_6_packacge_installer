@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $UID -ne 0  ]
+then
+	echo "ERROR: Run as a root user"
+	exit 1
+fi
+
+#packages that are going to be installed
+
+PACKAGES=( figlet sl net-tools )
+
+for i in $(PACLAGES[@])
+do
+	echo "[+] Installing $i....
+	apt install $i -y &>/dev/null
+	echo "[+] Installation Completed"
+done
