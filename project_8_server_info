@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# hello world
+
+pasalaihello="Hello Pasa"
+echo $pasalaihello
+
+
+# Sleep
+
+sleep 10 && echo “I’ve been sleeping for 10 seconds, I want more” && sleep 10 && echo “I’m done sleeping, thanks!”
+
+# Wait
+
+wait 1234
+echo "Vayo"
+
+# User Input
+
+echo "Lyau pasa k ho tmo age?"
+read age
+echo "Ball $age"
+
+# show server info
+
+echo "Date"
+date
+echo "Uptime"
+uptime
+echo "Memory Usage"
+free -m
+echo "Network Usage"
+ip a
