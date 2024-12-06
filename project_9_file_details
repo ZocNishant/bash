@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Information of a file
+
+if [ $# -eq 0 ]
+then
+	echo "Usage: $0 [File]"
+	exit
+fi
+
+
+owner=`ls -la $1 |awk '{print $3}'`
+size=`ls -la $1 | awk '{print $5}'
+month=`ls -la $1 | awk '{print $6 " " $7}'
+time=`ls -la $1 | awk '{print $8'
+
+echo "Owner:$owner"
+echo "Size:"$size bytes"
+echo "This file was created on $month at $time"
+echo "File Type: `file $1`"
+echo 
+echo "Permissions:"
+
+
+# Checking readable permissions
+if [ -r $1 ]
+then
+	echo "READABLE=TRUE"
+else
+	echo "READABLE=FALSE"
+fi
+
+# Checking writeable permissions
+
+if [ -w $1  ]
+then
+	echo "WERITABLE=TREU"
+else
+	echo "WRITEABLE=FALSE"
+fi
+
+# Checking for executable permissions
+
+if [ -x $1 ]
+then
+	echo "EXECUTABLE=TRUE"
+else
+	echo "EXECUTABLE=FALSE"
+fi
