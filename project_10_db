@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# This script will gather info from employee and store in a csv file
+
+read -p "[+]Enter your name:" NAME
+read -p "[+]Enter your id:" ID
+read -p "[+]Enter your department:" DEPARTMENT
+read -p "[+]Enter your gender:" GENDER
+read -p "[+]Enter your salary:" SALARY
+
+read -p "Are all information you just provided correct? [y/n]:" INPUT
+
+INFO=$NAME,$ID,$DEPARTMENT,$GENDER,$SALARY
+
+case "$INPUT" in
+	n | N )
+	exit
+	;;
+	Y | y )
+	echo $INFO >> employee_data.csv
+	;;
+	* )
+	exit
+	;;
+esac
+
+echo "Your data has been stored successfully"
