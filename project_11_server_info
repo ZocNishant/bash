@@ -1,0 +1,51 @@
+#!/bin/ bash
+
+# Server Utilization
+
+# Color
+
+RED="\e[31m"
+GREEN="\e[32m"
+EXIT="\e[0m"
+
+divider () {
+	echo -e "${RED}============================${EXIT}"
+}
+
+
+clear
+
+echo -e "${GREEN}**********************************${EXIT}"
+echo -e "${GREEN}*********SERVER UTILIZATION*******${EXIT}"
+echo -e "${GREEN}**********************************${EXIT}"
+
+
+echo -e "Today's date is: `date`"
+echo
+divider
+echo
+
+echo
+echo "Uptime: `uptime` "
+echo 
+
+echo
+echo "Current Users: `w`"
+echo
+
+echo
+divider
+echo
+echo "Last Login"
+
+last -a | head -n 3
+
+echo
+divider
+echo
+
+echo "Disk and Memory Usage"
+df -h | xargs | awk '{print "Free/total: disk:" $11 "/" $9}'
+echo
+
+divider
